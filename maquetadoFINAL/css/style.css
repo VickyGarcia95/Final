@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  h1{
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+  }
+  h2{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    text-align: center;
+  }
+  h3{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+  p{
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  a{
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+/*---------nav----------*/
+nav{
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+/* boton*/
+.btn{
+  background-color: #807CDC;
+  color: white;
+  border-radius: 100px;  
+  padding: 10px 30px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 1rem
+}
+.btn:hover {
+  background-color: #197BD0;
+}
+/*--------hero------*/
+.hero{
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.hero-texto {
+  margin: auto;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .hero-texto h2 {
+    margin: 10px 0 50px;
+  }
+  .hero-texto p {
+    margin-top: 10px;
+  }
+/*Fin Hero*/
+/*--------Seccion Coleccion--------*/
+.coleccion{
+  padding: 80px 100px;
+  text-align: center;
+}
+.coleccion h2{
+  padding-bottom: 10px;
+}
+.setlibro {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  position: relative;
+  padding-bottom: 30px;
+}
+figure {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+figure:hover {
+  transform: translateY(-5px);
+}
+figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+.ficha {
+  background-color: #FFD93D;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+  display: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+.ficha .cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.ficha p{
+  text-align: left;
+}
+/*FIN COLECCION*/
+/*----------Beneficio---------*/
+.beneficio {
+  background-color: #FFD73D;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 2rem auto;
+}
+  .beneficio p {
+    margin: 1rem 0;
+  }
+.b-imagen {
+  max-width: 360px;
+  height: auto;
+}
+.b-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.b-texto {
+  padding: 1rem;
+}
+/*Fin beneficio*/
+/*--------Inicio Nuevolibro descripcion------*/
+.descri-libro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 200px 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.dl-texto {
+  max-width: 500px;
+}
+.dl-img-izq {
+  width: 200px;
+  height: auto;
+}
+.dl-img-der {
+  max-width: 100px;
+  height: auto;
+}
+.list{
+  font-size: 20px;
+  font-weight:500;
+  line-height: 40px;
+  text-align: center;
+}
+/**/
+/*-------------formulario-----------*/
+.formulario {
+  background-color: #ffe033;
+  padding: 3rem;
+  border-radius: 2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 2rem auto 8rem;
+}
+    .formulario h3 {
+    margin-bottom: 1.5rem;
+    }
+.formulario label {
+  display: block;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: left;
+}
+.formulario input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #fff;
+  font-size: 1rem;
+}
+/**/
+/*------artista-------*/
+.artista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 3rem 1rem;
+}
+.fondoArtista{
+  background-image: url('../img/acuarela.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.contenido {
+  max-width: 600px;
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.nombre {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  gap: 0.5rem;
+}
+  .nombre span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+.bio {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+.galeria {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.galeria img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+/*ultimoboton*/
+.visitanos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem ;
+}
+/*---------footer----------*/
+footer{
+  background-color: #197BD0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+footer a{
+  font-size: 16px;
+  margin-left: 10px;
+}
+footer p{
+  font-size: 16px;
+}
+/*CLASES PARA FOOTER*/
+  /* Logo */
+  .logo img{
+      width: 50px;
+  }
+  /* Redes sociales */
+  .redes {
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+  }
+      .redes img {
+          width: 20px;
+          padding:0 10px;
+      }
+  /* Copyright y legales */
+  .copy{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center; 
+  }
+      .copy a:hover {
+          text-decoration: underline;
+  }
+/*FIN CLASES PARA FOOTER*/

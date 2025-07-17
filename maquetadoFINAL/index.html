@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
+</head>
+<body>
+    
+    <!--inicio header-->
+    <header class="hero">
+        <nav>
+            <!--el logo le llevaria a la pagina oficial-->
+            <div class="logo">
+                <a href="#" >
+                  <img src="./img/Logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="redes">
+                <a href="#" target="blank">
+                    <img src="./img/icon-redsocial/facebook-icon.svg" alt="Seguinos en facebook">
+                </a>
+                <a href="#" target="blank">
+                    <img src="./img/icon-redsocial/instagram-icon.svg" alt="Seguinos en instagram">
+                </a>
+                <a href="#" target="blank">
+                    <img src="./img/icon-redsocial/x-icon.svg" alt="Seguinos en X">
+                </a>
+            </div>
+        </nav>
+        <div class="hero-texto">
+            <h1>Diverterror</h1>
+            <h2>Cuentos para asustarse...¡y reirse!</h2>
+            <a class="btn" href="./index.html#coleccion">Conocé la serie completa</a>
+            <p>10% off en la serie completa</p>
+        </div>
+    </header>
+    <!--fin header-->
+    <!--inicio main-->
+    <main>
+       <!--inicio S. coleccion-->
+       <section id="coleccion" class="coleccion">
+        <h2>Una nueva forma de leer clásicos</h2>
+        <p>Creamos una colección única para que los chicos se acerquen a los grandes clásicos del terror desde la risa, la imaginación y el arte.</p>
+        <div class="setlibro">
+            <!-- libro1 -->
+            <figure class="libro" data-id="1">
+                <img src="./img/coleccion/cuento1.jpg" alt="Portada de libro1">
+            </figure>
+            <!-- fin libro1 -->
+            <!-- libro2 -->
+            <figure class="libro" data-id="2">
+                <img src="./img/coleccion/cuento2.jpg" alt="Portada de libro2">
+            </figure>
+            <!-- fin libro2 -->
+            <!-- libro3 -->
+            <figure class="libro" data-id="3">
+                <img src="./img/coleccion/cuento3.jpg" alt="Portada de libro3">
+            </figure>
+            <!-- fin libro3 -->
+        </div>
+        <!--Tarjeta amarrila-->
+        <div class="ficha" id="ficha-libro">
+            <button class="cerrar">X</button>
+            <p><strong>Nombre del libro:</strong> <span id="titulo"></span></p>
+            <p><strong>Ilustrador:</strong> <span id="ilustrador"></span></p>
+            <p><strong>Resumen:</strong> <span id="resumen"></span></p>
+            <p><strong>Adaptación de:</strong> <span id="autor"></span></p>
+            <p><strong>Páginas:</strong> <span id="paginas"></span></p>
+          </div>
+          <script src="./js/detallelibro.js"></script>
+          <!--FinTarjeta amarrila-->
+       </section>
+       <!--fin s. Coleccion--> 
+       <!--inicio S.Beneficio-->
+       <section class="beneficio">
+        <div class="b-contenido ">
+            <img class="b-imagen" src="./img/libros.png" alt="los tres libros flotado">
+            <div class="b-texto">
+                <h2>Preordená la serie completa</h2>
+                <p>Pedí los tres y recibí<br>
+                10% de descuento + envío anticipado</p>
+                <a class="btn" href="./index.html#formulario">Quiero la colección completa</a>
+                <p>Cupos Limitado</p>
+            </div>
+        </div>
+        </section>
+        <!--fin s. beneficio-->
+        <!--inicio S.nuevo libro-->
+        <section class="descri-libro">
+            <img class="dl-img-izq" src="./img/padre.png" alt="dibujo de un padre contando un cuento junto con sus dos hijos">
+            <div class="dl-texto">
+                <h3>Un nuevo tipo de libro infantil</h3>
+                <p class="list">Libros de 40 páginas con tapa blanda.<br>
+                Full color ilustrado con técnicas reales (acuarela, tinta, óleo).<br>
+                Adaptaciones originales para niños de 7 a 9 años.<br>
+                Hechos para fomentar la lectura compartida.<br>
+                Tono divertido pero no simplón.</p>
+            </div>
+            <img class="dl-img-der" src="./img/nene1.png" alt="dibujo de nene mirando arriba mientras abraza un libro">
+        </section>
+        <!--fin s.nuevolibro-->
+        <!--inicio S.formulario-->
+        <section id="formulario" class="formulario">
+            <h2>Llená su biblioteca de historias inolvidables</h2>
+            <form action="#" method="POST">
+              <label for="nombre">Nombre y Apellido</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+              <label for="email">Mail</label>
+              <input type="email" id="email" name="email" placeholder="TuMail@ejemplo.com" required>
+              <a class="btn" href="#">Preodenar</a>
+            </form>
+          </section>
+        <!--fin s.formulario--> 
+        <!--inicio S. Artista-->
+       <section class="fondoArtista artista">
+        <div class="contenido">
+            <img class="avatar" src="./img/avatar-obras.png" alt="Avatar del artista">
+                <div class="nombre">
+                    <img src="./img/icon-redsocial/instagram-icon.svg" alt="icono de instagram">
+                    <span>@igAutor</span>
+                </div>
+            <p class="bio">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Morbi tristique in turpis a scelerisque. Vivamus facilisis turpis eget nulla accumsan suscipit.”</p>
+                <div class="galeria">
+                    <img src="./img/avatar-obras.png" alt="Obra 1">
+                    <img src="./img/avatar-obras.png" alt="Obra 2">
+                    <img src="./img/avatar-obras.png" alt="Obra 3">
+                </div>
+        </div>
+        </section>
+        <!--fin s. artista--> 
+        <!--inicio boton-->
+       <div class="visitanos">
+        <a class="btn" target="blank" href="#">Visitanos en nuestra pagina oficial</a>
+       </div>
+        <!--fin boton--> 
+    </main>
+    <!--fin main-->
+    <!--inicio footer-->
+    <footer>
+        <!--el logo le llevaria a la pagina oficial-->
+        <div class="logo">
+            <a href="#" target="blank">
+                <img src="./img/Logo.png" alt="Logo editorial">
+            </a>
+        </div>
+        <div class="copy">
+            <p>© 2025 Editorial. Todos los derechos reservados. <p>
+            <a href="#">Politicas de Privacidad </a>
+            <a href="#">Terminos y condiciones</a>         
+        </div>
+        <div class="redes">
+            <a href="#" target="blank">
+                <img src="./img/icon-redsocial/facebook-icon.svg" alt="Seguinos en facebook">
+            </a>
+            <a href="#" target="blank">
+                <img src="./img/icon-redsocial/instagram-icon.svg" alt="Seguinos en instagram">
+            </a>
+            <a href="#" target="blank">
+                <img src="./img/icon-redsocial/x-icon.svg" alt="Seguinos en X">
+            </a>
+        </div>
+    </footer>
+    <!--fin footer-->
+</body>
+</html> 
